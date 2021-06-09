@@ -1,27 +1,37 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int n;
-    cout<<"enter n:"<<endl;
     cin>>n;
     int i=1;
     while(i<=n)
     {
-        int j=1;
-        int value;
-        value=n-i+1;
-        while(j<=n-i+1)
+        
+        int space=1;
+        while(space<=n-i)
         {
-            cout<<value-j+1;
+            cout<<" ";
+            space++;
+        }
+        int j=1;
+        
+        int x = i+j-1;
+        while(j<=i)
+        {
+            cout<<x;
             j++;
+        }
+        int k=i-1;
+        int a = 2*i-2;
+        while(k>=1)
+        {
+            cout<<a;
+            k--;
+            a--;
         }
         cout<<endl;
         i++;
     }
     
-
-
-
 }
